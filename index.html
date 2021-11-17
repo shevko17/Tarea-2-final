@@ -1,0 +1,238 @@
+<!<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+        <link href="css/estilos.css" rel="stylesheet">
+
+        <!--bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    
+    </head>
+    <body>
+        <div class="container-fluid">
+            <form class="row g-3 needs-validation" id="form" novalidate>
+                <ul>
+                    <li>
+                        <label for="nombrecompleto" class="form-label">Nombre Completo</label>
+                        <input type="text" class="form-control" id="nombrecompleto" placeholder="Nombre Completo" required>
+                        <div class="valid-feedback">
+                            El nombre está bien
+                        </div>
+                        <div class="invalid-feedback">
+                            El nombre es obligatorio
+                        </div>
+                    </li>
+                    <li>
+                        <label for="rut" class="form-label">RUT</label>
+                        <input type="text" class="form-control" id="rut" placeholder="RUT(sin puntos)" pattern="[K0-9]+" required>
+                        <div class="valid-feedback">
+                            El formato de rut está bien
+                        </div>
+                        <div class="invalid-feedback">
+                            El rut no tiene el formato adecuado
+                        </div>
+                    </li>
+                    <li>
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+                        <div class="valid-feedback">
+                            El formato del mail es correcto
+                        </div>
+                        <div class="invalid-feedback">
+                            El formato del mail es incorrecto
+                        </div>
+                    </li>
+                    <li>
+                        <label for="telefono" class="form-label">Teléfono Móvil</label>
+                        <input type="number" class="form-control" id="telefono" placeholder="Telefono" maxlength="9" required>
+                        <div class="valid-feedback">
+                            Numero Correcto
+                        </div>
+                        <div class="invalid-feedback">
+                            El numero telefonico no tiene el formato correcto
+                        </div>
+                    </li>
+                    
+                    <li>                         
+                        Seleccionar uno o más lenguajes de programación de interés    
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="Python">
+                            <label class="form-check-label" for="lenguajes">
+                              Python
+                            </label>               
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="TypeScript">
+                            <label class="form-check-label" for="lenguajes">
+                              TypeScript
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="C++" >
+                            <label class="form-check-label" for="lenguajes">
+                              C++
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="C#">
+                            <label class="form-check-label" for="lenguajes">
+                              C#
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="PHP">
+                            <label class="form-check-label" for="lenguajes">
+                              PHP
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="Ruby on Rails">
+                            <label class="form-check-label" for="lenguajes">
+                              Ruby on Rails
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="Java">
+                            <label class="form-check-label" for="lenguajes">
+                              Java
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="R">
+                            <label class="form-check-label" for="lenguajes">
+                              R
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="Groovy">
+                            <label class="form-check-label" for="lenguajes">
+                              Groovy
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="Go">
+                            <label class="form-check-label" for="lenguajes">
+                              Go
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="Swift">
+                            <label class="form-check-label" for="lenguajes">
+                              Swift
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="Kotlin">
+                            <label class="form-check-label" for="lenguajes">
+                              Kotlin
+                            </label>
+                          </div>                
+                    </li>
+                    <li>
+                        Cuál es su nivel de experiencia en programación?
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="experiencia" id="Alto" required> 
+                            <label class="form-check-label" for="Alto">
+                              Alto
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="experiencia" id="Medio">
+                            <label class="form-check-label" for="Medio">
+                              Medio
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="experiencia" id="Bajo">
+                            <label class="form-check-label" for="Bajo">
+                              Bajo
+                            </label>
+                          </div>
+                          <div class="valid-feedback">
+                            Correcto
+                        </div>
+                        <div class="invalid-feedback">
+                            Debe seleccionar una opcion
+                        </div>
+                    </li>
+                    <li>
+                        Nivel de conocimiento sobre los siguientes lenguajes de programación
+                        <div style="width: 300px;">
+                        <label for="RangoPython" class="form-label">Python</label>
+                        <input type="range" class="form-range" id="RangoPython" required>
+                        <label for="RangoJava" class="form-label">Java</label required>
+                        <input type="range" class="form-range" id="RangoJava">
+                            <label for="RangoC++" class="form-label">C++</label required>
+                            <input type="range" class="form-range" id="RangoPC++">
+                        </div>
+                    </li>
+                    <li>
+                
+                      Seleccione cuál de los siguientes cursos les ha tomado mayor dificultad.
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" name="dificultad" id="EDD">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Estructura de Datos
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" name="dificultad" id="IA" >
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Inteligencia Artificial
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" name="dificultad" id="IHC">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Interacción Humano-Computador
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" name="dificultad" id="SO">
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Sistemas Operativos
+                        </label>
+                        </div>
+                        <div class="form-check d-flex flex-row">
+                          <input class="form-check-input mt-0" type="checkbox" value="" name="dificultad" id="Otro">
+                          <label class="form-check-label" for="flexCheckChecked">
+                            Otro
+                          </label>
+                          <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Especifique cual">
+                        </div>                                    
+                    </li>
+                    <li>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Queremos conocer su opinión acerca de la escuela</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                      </div>
+                    </li>
+                    
+                    <div class="buttons-container">
+                      <!--<form action="Submit.html" target=”_top”>-->
+                        <button id="submitbutton" class="btn btn-primary" type="submit" >Enviar</button>
+                      <!--</form>-->
+                      
+                        <button class="btn btn-primary" type="reset">Cancelar</button>
+                      
+                    </div> 
+                    <div id="mensaje">
+
+                    </div>                   
+                </ul>
+            </form>
+        </div>        
+        <script data-main="js/inicio" src="js/require-jquery.js"></script>    
+    </body>
+</html>
